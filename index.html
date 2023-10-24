@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="base">
+                <div class="baseresult">
+                    <p id="resultado"></p>
+                </div>
+                <section class="basecalc">
+                    <button id="a1" onclick="onoff()">ON/OFF</button>
+                    <button id="a2" onclick="apagartudo()">CE</button>
+                    <button id="a3" onclick="apagar()"><span class="material-symbols-outlined">
+                        backspace
+                    </span></button>
+                    <button class="pequenos" id="a4" onclick="divisao()">/</button>
+                    <button value="7" id="b1" onclick="digitarnumeros(this, b1)">7</button>
+                    <button value="8" id="b2" onclick="digitarnumeros(this, b2)">8</button>  
+                    <button value="9" id="b3" onclick="digitarnumeros(this, b3)">9</button>
+                    <button id="b4" onclick="multiplicacao()">X</button>
+                    <button value="4" id="c1" onclick="digitarnumeros(this, c1)">4</button>
+                    <button value="5" id="c2" onclick="digitarnumeros(this, c2)">5</button>
+                    <button value="6" id="c3" onclick="digitarnumeros(this, c3)">6</button>
+                    <button class="pequenos" id="c4" onclick="subtracao()">-</button>
+                    <button value="1" id="d1" onclick="digitarnumeros(this, d1)">1</button>
+                    <button value="2" id="d2" onclick="digitarnumeros(this, d2)">2</button>
+                    <button value="3" id="d3" onclick="digitarnumeros(this, d3)">3</button>
+                    <button class="pequenos" id="d4" onclick="soma()">+</button>
+                    <button class="pequenos" id="e1" onclick="porcento()">%</button>
+                    <button value="0" id="e2" onclick="digitarnumeros(this, e2)">0</button>
+                    <button class="pequenos" value="." id="e3" onclick="digitarnumeros(this, e3)">.</button>
+                    <button class="pequenos" id="e4" onclick="resultado()">=</button>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>© All rights reserved to Matheus Marchon.</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
