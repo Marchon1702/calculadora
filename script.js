@@ -149,11 +149,12 @@ function porcento() {
         div = false
         pcent = true
 
-        if(pResult.innerHTML.length > 0) {
+        if(pResult.innerHTML.length > 1 && valorguardado > 0) {
             resultpcent = (Number(pResult.innerHTML)/100)*valorguardado
-            pResult.innerHTML = resultpcent.toFixed(1).replace('.', ',')
+            pResult.innerHTML = resultpcent.toFixed(4).replace('.', ',')
             } else {
-            pResult.innerHTML = Number(pResult.innerHTML)/100
+                resultpcent = (Number(pResult.innerHTML) / 100)
+                pResult.innerHTML = resultpcent.toString().replace('.', ',')
         }
         
     }      
